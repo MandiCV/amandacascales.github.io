@@ -1,0 +1,18 @@
+Imagenes que espera la web (JPG, 16:9). Si falta alguna, se ve un fondo oscuro en su lugar.
+Comprime cada una (idealmente por debajo de 300 KB) antes de subirla.
+
+touristtrap-hero.jpg (1920x1080)
+touristtrap-cover.jpg (1280x720)
+relics-hero.jpg (1920x1080)
+relics-cover.jpg (1280x720)
+stomagochi-kids-hero.jpg (1920x1080)
+stomagochi-kids-cover.jpg (1280x720)
+touristtrap-1.jpg (1280x720)
+touristtrap-2.jpg (1280x720)
+touristtrap-3.jpg (1280x720)
+relics-1.jpg (1280x720)
+relics-2.jpg (1280x720)
+relics-3.jpg (1280x720)
+stomagochi-kids-1.jpg (1280x720)
+stomagochi-kids-2.jpg (1280x720)
+stomagochi-kids-3.jpg (1280x720)
