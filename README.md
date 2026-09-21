@@ -15,4 +15,4 @@ Android game made with Godot to help children with ostomies with their integrati
 [Download on itch.io](https://mandicv.itch.io/stomagochi-kids)
 
 ### Currently: TouristTrap · Unity
-Winner of the MVP award at EVAD's Master's in Game Design and Development. In production at YaloseGames, the studio I co-founded, with a planned release on major platforms. More details coming soon.
+Winner of the MVP award at EVAD's Master's in Game Design and Development. In production at YaloseGames, the studio I co-founded, with a planned release on major platforms. More details coming soon. 
