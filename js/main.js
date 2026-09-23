@@ -85,5 +85,29 @@
       lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
       document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lb.classList.contains('is-open')) closeLb(); });
     }
+        // Parallax on hero images while scrolling
+    var heroBgs = document.querySelectorAll('.hero-bg');
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (heroBgs.length && !reduceMotion) {
+      var ticking = false;
+      function updateParallax() {
+        heroBgs.forEach(function (bg) {
+          var hero = bg.closest('.hero');
+          var rect = hero.getBoundingClientRect();
+          // Only move while the hero is at least partly on screen
+          if (rect.bottom > 0 && rect.top < window.innerHeight) {
+            bg.style.transform = 'translateY(' + (rect.top * 0.25) + 'px)';
+          }
+        });
+        ticking = false;
+      }
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      }, { passive: true });
+      updateParallax();
+    }
   });
 })();

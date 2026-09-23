@@ -63,7 +63,7 @@ html[lang="en"] [lang="es"],html[lang="es"] [lang="en"]{display:none!important}
 .hero{position:relative;display:grid;place-items:center;min-height:min(90vh,780px);padding:8rem 0 calc(var(--v) + 3rem);background:var(--ink);color:#fff;text-align:center;
   clip-path:polygon(0 0,100% 0,100% calc(100% - var(--v) - 5px),50% calc(100% - 5px),0 calc(100% - var(--v) - 5px))}
 .hero--page{min-height:clamp(400px,64vh,580px)}
-.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero-bg{position:absolute;inset:-10% 0;background-size:cover;background-position:center;will-change:transform}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,16,26,.62),rgba(20,16,26,.3) 45%,rgba(20,16,26,.66))}
 .hero-content{position:relative;z-index:2}
 .hero h1{margin:0 0 1.25rem;font-size:clamp(2.9rem,10vw,6.25rem);font-weight:800;letter-spacing:-.035em}
