@@ -23,10 +23,8 @@
       <a href="../#about"><span lang="en">About</span><span lang="es">Sobre mí</span></a>
       <a href="../#contact"><span lang="en">Contact</span><span lang="es">Contacto</span></a>
     </nav>
-    <!-- TODO: logo. Replace the text with <img src="../assets/img/logo.svg" alt="Amanda Cascales" height="40"> -->
     <a class="brand" href="../">Amanda Cascales</a>
     <div class="header-tools">
-      <!-- TODO: replace each href="#" with your profile URL -->
       <ul class="social"><li><a href="https://www.linkedin.com/in/amanda-cascales/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://mandicv.itch.io" target="_blank" rel="noopener">itch.io</a></li><li><a href="mailto:amandacascales@gmail.com">Email</a></li></ul>
       <button class="lang-toggle" type="button">ES</button>
     </div>
@@ -57,8 +55,7 @@
   <section class="section section--mist">
     <div class="container">
       <div class="split"><h2><span lang="en">Screenshots and video</span><span lang="es">Capturas y vídeo</span></h2><div></div></div>
-      <div class="gallery"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/EKKCTFD6A2U" title="TouristTrap trailer" loading="lazy" allowfullscreen></iframe></div></div><div class="media" role="img" aria-label="TouristTrap screenshot 2"><div style="background-image:url('../assets/img/touristtrap-2.jpg')"></div></div><div class="media" role="img" aria-label="TouristTrap screenshot 3"><div style="background-image:url('../assets/img/touristtrap-3.jpg')"></div></div></div>
-      <!-- TODO video: <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="TouristTrap trailer" loading="lazy" allowfullscreen></iframe></div> -->
+<div class="gallery"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/EKKCTFD6A2U" title="TouristTrap trailer" loading="lazy" allowfullscreen></iframe></div><button class="media media--zoom" type="button" data-full="../assets/img/touristtrap-2.jpg" aria-label="TouristTrap screenshot 2"><div style="background-image:url('../assets/img/touristtrap-2.jpg')"></div></button><button class="media media--zoom" type="button" data-full="../assets/img/touristtrap-3.jpg" aria-label="TouristTrap screenshot 3"><div style="background-image:url('../assets/img/touristtrap-3.jpg')"></div></button></div>
     </div>
   </section>
 
@@ -72,21 +69,35 @@
   <section class="section section--mist">
     <div class="container split">
       <h2><span lang="en">Technical information</span><span lang="es">Información técnica</span></h2>
-      <div><dl class="facts"><dt><span lang="en">Engine</span><span lang="es">Motor</span></dt><dd><span lang="en">Unity</span><span lang="es">Unity</span></dd><dt><span lang="en">Studio</span><span lang="es">Estudio</span></dt><dd><span lang="en">YaloseGames</span><span lang="es">YaloseGames</span></dd><dt><span lang="en">Status</span><span lang="es">Estado</span></dt><dd><span lang="en">In development</span><span lang="es">En desarrollo</span></dd><dt><span lang="en">Award</span><span lang="es">Premio</span></dt><dd><span lang="en">MVP, EVAD master's in game development and design</span><span lang="es">MVP, máster de desarrollo y diseño de videojuegos de la EVAD</span></dd><dt><span lang="en">Platforms</span><span lang="es">Plataformas</span></dt><dd><span lang="en"><span class="todo">TODO</span></span><span lang="es"><span class="todo">TODO</span></span></dd><dt><span lang="en">My role</span><span lang="es">Mi rol</span></dt><dd><span lang="en"><span class="todo">TODO</span></span><span lang="es"><span class="todo">TODO</span></span></dd></dl></div>
+      <div><dl class="facts"><dt><span lang="en">Engine</span><span lang="es">Motor</span></dt><dd><span lang="en">Unity</span><span lang="es">Unity</span></dd><dt><span lang="en">Studio</span><span lang="es">Estudio</span></dt><dd><span lang="en">YaloseGames</span><span lang="es">YaloseGames</span></dd><dt><span lang="en">Status</span><span lang="es">Estado</span></dt><dd><span lang="en">In development</span><span lang="es">En desarrollo</span></dd><dt><span lang="en">Award</span><span lang="es">Premio</span></dt><dd><span lang="en">MVP, EVAD master's in game development and design</span><span lang="es">MVP, máster de desarrollo y diseño de videojuegos de la EVAD</span></dd><dt><span lang="en">My role</span><span lang="es">Mi rol</span></dt><dd><span lang="en">Management phase programmer</span><span lang="es">Programadora de la fase de gestión</span></dd></dl></div>
     </div>
   </section>
 
   <section class="section">
     <div class="container split">
       <h2><span lang="en">Development</span><span lang="es">Desarrollo</span></h2>
-      <div><p lang="en"><span class="todo">TODO</span>: how the project started, the collaboration with the partner organisation (if it can be public) and what you work on.</p><p lang="es"><span class="todo">TODO</span>: cómo empezó el proyecto, la colaboración con la entidad (si puede ser público) y en qué trabajas.</p></div>
+      <div>
+        <p lang="en">The project is part of the final thesis for the master's degree in Unity game design and development at EVAD. The idea comes from having grown up near the sea: after years of visiting beach bars like this one every summer, I always wondered what it would be like to run one. I pitched it to the team, and since we'd all grown up in coastal towns (some had even worked in beach bars themselves), it clicked immediately. We picked a comedic tone and the Ibáñez art style as a tribute to one of Spain's biggest cartoonists, to match the game's setting, and built the foundations drawing inspiration from games like Overcooked and Plate Up!. That work paid off: we were chosen as the best project of the course, and EVAD brought us into its incubator.</p>
+        <p lang="en">My main role has been programming the restaurant management systems, focused on the shop and, above all, the 3D voxel-based grid. I originally designed it as four independent 2D grids, but the approach quickly hit its limits and I had to rethink the whole system from scratch. That's when I realised a 3D voxel matrix, projected onto the walls and floor, would let me place objects of any size on any axis, remove the need to sync separate cells, and drop the single-play-area constraint the original design wasn't built to scale beyond. After weeks of work, I ended up with the system I have today, which works flawlessly and lets us expand the game as needed with almost no code changes.</p>
+        <p lang="es">El proyecto entra dentro del trabajo de fin de máster del máster de diseño y desarrollo de videojuegos en Unity de la EVAD. La idea viene de haberme criado cerca del mar: tras años yendo a chiringuitos como este cada verano, siempre pensé cómo sería tener uno. Propuse la idea al equipo y, como todos nos habíamos criado en ciudades costeras (alguno incluso había trabajado en uno), tuvo muy buena acogida desde el principio. Elegimos un tono cómico y el estilo Ibáñez como tributo a uno de los mayores historietistas de España, para que encajara con el ambiente del juego, y construimos las bases inspirándonos en juegos como Overcooked o Plate Up!. El esfuerzo dio sus frutos: nos eligieron como mejor proyecto del curso y la propia EVAD nos metió en su incubadora.</p>
+        <p lang="es">Mi rol principal ha sido programar los sistemas de gestión del restaurante, centrándome en la tienda y, sobre todo, en el grid 3D basado en vóxeles. Al principio lo planteé como cuatro grids 2D independientes, pero el diseño se quedó corto muy pronto y tuve que replantear todo el sistema desde cero. Fue entonces cuando me di cuenta de que una matriz 3D de vóxeles, proyectada sobre paredes y suelo, me permitía colocar objetos de cualquier tamaño en cualquier eje, eliminaba la necesidad de sincronizar celdas por separado, y quitaba la limitación de una única zona de juego para la que el diseño original no estaba pensado. Tras semanas de trabajo, acabé con el sistema que tengo ahora, que funciona a la perfección y nos permite expandir el juego según lo necesitemos, prácticamente sin tocar código.</p>
+      </div>
     </div>
   </section>
 
   <section class="section section--mist">
     <div class="container split">
       <h2><span lang="en">Team</span><span lang="es">Equipo</span></h2>
-      <div><ul class="team"><li><strong>Amanda Cascales</strong><span><span lang="en"><span class="todo">TODO</span></span><span lang="es"><span class="todo">TODO</span></span></span></li><li><strong><span class="todo">TODO name</span></strong><span><span lang="en"><span class="todo">TODO role</span></span><span lang="es"><span class="todo">TODO rol</span></span></span></li></ul></div>
+      <div><ul class="team">
+        <li><div class="avatar" style="background-image:url('../assets/img/team-amanda.jpg')"></div><div class="team-info"><strong>Amanda Cascales Valentín</strong><span><span lang="en">Programmer</span><span lang="es">Programadora</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-pepe.jpg')"></div><div class="team-info"><strong>Pepe Arenas Venegas</strong><span><span lang="en">Programmer</span><span lang="es">Programador</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-sebas.jpg')"></div><div class="team-info"><strong>Sebastián Olaechea Gazzo</strong><span><span lang="en">Programmer</span><span lang="es">Programador</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-david.jpg')"></div><div class="team-info"><strong>David</strong><span><span lang="en">3D Artist</span><span lang="es">Artista 3D</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-davidOnline.jpg')"></div><div class="team-info"><strong>David Online</strong><span><span lang="en">3D Artist</span><span lang="es">Artista 3D</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-carlos.jpg')"></div><div class="team-info"><strong>Carlos Cañizares Rodríguez</strong><span><span lang="en">3D Artist</span><span lang="es">Artista 3D</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-dani.jpg')"></div><div class="team-info"><strong>Amir Daniel Domínguez El Qamch</strong><span><span lang="en">3D Artist</span><span lang="es">Artista 3D</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-ernesto.jpg')"></div><div class="team-info"><strong>Ernesto</strong><span><span lang="en">3D Artist</span><span lang="es">Artista 3D</span></span></div></li>
+      </ul></div>
     </div>
   </section>
 

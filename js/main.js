@@ -53,5 +53,37 @@
 
     // Footer year
     document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+        // Lightbox for gallery images
+    var zoomBtns = document.querySelectorAll('.media--zoom');
+    if (zoomBtns.length) {
+      var lb = document.createElement('div');
+      lb.className = 'lightbox';
+      lb.innerHTML = '<button class="lightbox-close" type="button" aria-label="Close">&times;</button><img alt="">';
+      document.body.appendChild(lb);
+      var lbImg = lb.querySelector('img');
+      var lbClose = lb.querySelector('.lightbox-close');
+      var lastFocus = null;
+
+      function openLb(src, alt) {
+        lastFocus = document.activeElement;
+        lbImg.src = src;
+        lbImg.alt = alt || '';
+        lb.classList.add('is-open');
+        lbClose.focus();
+      }
+      function closeLb() {
+        lb.classList.remove('is-open');
+        lbImg.src = '';
+        if (lastFocus) lastFocus.focus();
+      }
+      zoomBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          openLb(btn.getAttribute('data-full'), btn.getAttribute('aria-label'));
+        });
+      });
+      lbClose.addEventListener('click', closeLb);
+      lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lb.classList.contains('is-open')) closeLb(); });
+    }
   });
 })();
