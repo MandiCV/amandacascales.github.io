@@ -96,7 +96,7 @@
           var rect = hero.getBoundingClientRect();
           // Only move while the hero is at least partly on screen
           if (rect.bottom > 0 && rect.top < window.innerHeight) {
-            bg.style.transform = 'translateY(' + (rect.top * 0.25) + 'px)';
+            bg.style.transform = 'translateY(' + (rect.top * 0.12) + 'px)';
           }
         });
         ticking = false;
