@@ -19,15 +19,13 @@
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span><span lang="en" class="sr">Menu</span><span lang="es" class="sr">Menú</span></button>
     <nav id="site-nav" class="nav" aria-label="Main">
       <a href="../"><span lang="en">Home</span><span lang="es">Inicio</span></a>
-      <a href="../#projects"><span lang="en">Projects</span><span lang="es">Proyectos</span></a>
       <a href="../#about"><span lang="en">About</span><span lang="es">Sobre mí</span></a>
+      <a href="../#projects"><span lang="en">Projects</span><span lang="es">Proyectos</span></a>
       <a href="../#contact"><span lang="en">Contact</span><span lang="es">Contacto</span></a>
     </nav>
-    <!-- TODO: logo. Replace the text with <img src="../assets/img/logo.svg" alt="Amanda Cascales" height="40"> -->
     <a class="brand" href="../">Amanda Cascales</a>
     <div class="header-tools">
-      <!-- TODO: replace each href="#" with your profile URL -->
-      <ul class="social"><li><a href="#" target="_blank" rel="noopener">GitHub</a></li><li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="#" target="_blank" rel="noopener">itch.io</a></li><li><a href="mailto:TODO@email.com">Email</a></li></ul>
+      <ul class="social"><li><a href="https://www.linkedin.com/in/amanda-cascales/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://mandicv.itch.io" target="_blank" rel="noopener">itch.io</a></li><li><a href="mailto:amandacascales@gmail.com">Email</a></li></ul>
       <button class="lang-toggle" type="button">ES</button>
     </div>
   </div>
@@ -39,7 +37,6 @@
       <div class="container hero-content">
         <h1>Relics</h1>
         <p lang="en" class="lead">A third-person shooter with platforming elements, built from scratch on a custom engine.</p><p lang="es" class="lead">Un shooter en tercera persona con elementos de plataformas, hecho desde cero sobre un motor propio.</p>
-        <div class="hero-actions"><a class="btn" href="https://infinite-magic.itch.io/relics" target="_blank" rel="noopener"><span lang="en">Play on itch.io</span><span lang="es">Jugar en itch.io</span></a></div>
       </div>
     </section>
   </div>
@@ -47,43 +44,69 @@
   <section class="section">
     <div class="container split">
       <h2><span lang="en">Overview</span><span lang="es">Resumen</span></h2>
-      <div><p lang="en">Relics is a third-person shooter with platforming elements set in a low-poly magical world. The whole game, engine included, was built from scratch in 9 months by a team of four using only raylib.</p><p lang="es">Relics es un shooter en tercera persona con elementos de plataformas ambientado en un mundo mágico low-poly. Todo el juego, motor incluido, se construyó desde cero en 9 meses por un equipo de cuatro personas usando solo raylib.</p></div>
+      <div>
+        <p lang="en">Relics is a third-person shooter with platforming elements set in a low-poly magical world. The whole game, engine included, was built from scratch in the last 9 months of the degree by a team of four using only the raylib library.</p>
+        <p lang="es">Relics es un shooter en tercera persona con elementos de plataformas ambientado en un mundo mágico low-poly. Todo el juego, motor incluido, se construyó desde cero en 9 meses en el último año del grado por un equipo de cuatro personas usando solamente la librería raylib.</p>
+      </div>
     </div>
   </section>
 
   <section class="section section--mist">
     <div class="container">
       <div class="split"><h2><span lang="en">Screenshots and video</span><span lang="es">Capturas y vídeo</span></h2><div></div></div>
-      <div class="gallery"><div class="media" role="img" aria-label="Relics screenshot 1"><div style="background-image:url('../assets/img/relics-1.jpg')"></div></div><div class="media" role="img" aria-label="Relics screenshot 2"><div style="background-image:url('../assets/img/relics-2.jpg')"></div></div><div class="media" role="img" aria-label="Relics screenshot 3"><div style="background-image:url('../assets/img/relics-3.jpg')"></div></div></div>
-      <!-- TODO video: <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Relics trailer" loading="lazy" allowfullscreen></iframe></div> -->
+      <div class="gallery"><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/-ujaHW2qMK4" title="Relics trailer" loading="lazy" allowfullscreen></iframe></div><button class="media media--zoom" type="button" data-full="../assets/img/relic-2.jpg" aria-label="Relics screenshot 2"><div style="background-image:url('../assets/img/relic-2.jpg')"></div></button><button class="media media--zoom" type="button" data-full="../assets/img/relic-3.jpg" aria-label="Relics screenshot 3"><div style="background-image:url('../assets/img/relic-3.jpg')"></div></button></div>
     </div>
   </section>
 
   <section class="section">
     <div class="container split">
-      <h2><span lang="en">How to play</span><span lang="es">Cómo jugar</span></h2>
-      <div><p lang="en">Available to play on itch.io. <span class="todo">TODO</span>: add controls and system requirements.</p><p lang="es">Disponible en itch.io. <span class="todo">TODO</span>: añade controles y requisitos del sistema.</p></div>
+      <h2><span lang="en">Availability</span><span lang="es">Disponibilidad</span></h2>
+      <div><p lang="en">You can play the first level, the part we managed to finish during the course. It would need further development before a full commercial release.</p><p lang="es">Se puede probar el proyecto con el primer nivel que nos dio tiempo a desarrollar durante el curso. Habría que seguir desarrollándolo en el caso de producir el juego para una salida en tiendas.</p></div>
     </div>
   </section>
 
   <section class="section section--mist">
     <div class="container split">
       <h2><span lang="en">Technical information</span><span lang="es">Información técnica</span></h2>
-      <div><dl class="facts"><dt><span lang="en">Engine</span><span lang="es">Motor</span></dt><dd><span lang="en">Custom engine on top of raylib</span><span lang="es">Motor propio sobre raylib</span></dd><dt><span lang="en">My role</span><span lang="es">Mi rol</span></dt><dd><span lang="en">Design and implementation of the ECS</span><span lang="es">Diseño e implementación del ECS</span></dd><dt><span lang="en">Team</span><span lang="es">Equipo</span></dt><dd><span lang="en">4 people</span><span lang="es">4 personas</span></dd><dt><span lang="en">Duration</span><span lang="es">Duración</span></dt><dd><span lang="en">9 months</span><span lang="es">9 meses</span></dd><dt><span lang="en">Platforms</span><span lang="es">Plataformas</span></dt><dd><span lang="en"><span class="todo">TODO</span></span><span lang="es"><span class="todo">TODO</span></span></dd></dl></div>
+      <div><dl class="facts"><dt><span lang="en">Engine</span><span lang="es">Motor</span></dt><dd><span lang="en">Custom engine on top of raylib</span><span lang="es">Motor personalizado usando la librería raylib</span></dd><dt><span lang="en">Studio</span><span lang="es">Estudio</span></dt><dd><span lang="en">Infinite Magic</span><span lang="es">Infinite Magic</span></dd><dt><span lang="en">Status</span><span lang="es">Estado</span></dt><dd><span lang="en">Paused</span><span lang="es">Pausado</span></dd><dt><span lang="en">My role</span><span lang="es">Mi rol</span></dt><dd><span lang="en">ECS engine programmer</span><span lang="es">Programadora del motor de juego ECS</span></dd></dl></div>
     </div>
   </section>
 
   <section class="section">
     <div class="container split">
       <h2><span lang="en">Development</span><span lang="es">Desarrollo</span></h2>
-      <div><p lang="en"><span class="todo">TODO</span>: why you built a custom engine, how the ECS is structured, what you learned.</p><p lang="es"><span class="todo">TODO</span>: por qué hicisteis un motor propio, cómo está estructurado el ECS, qué aprendiste.</p></div>
+      <div>
+        <ul>
+          <li lang="en">Project developed in the final year of the Multimedia Engineering degree, in a course following the Project-Based Learning methodology.</li>
+          <li lang="es">Proyecto desarrollado en el último año del grado de Ingeniería Multimedia, durante un curso siguiendo la metodología de Aprendizaje Basado en Proyectos.</li>
+          <li lang="en">Learned to work as a team on a project managed in GitHub, using branches and versioning.</li>
+          <li lang="es">Aprendizaje de trabajar en equipo en un proyecto desarrollado en GitHub con ramas y versiones.</li>
+          <li lang="en">Worked under both team-size and technical constraints, including a restrictive development machine.</li>
+          <li lang="es">Experiencia con limitaciones tanto de personal como a nivel técnico con una máquina restrictiva.</li>
+          <li lang="en">Learned to build a game engine based on an Entity-Component-System architecture.</li>
+          <li lang="es">Aprendizaje del desarrollo de un motor de juego basado en Entidad-Componentes-Sistemas.</li>
+          <li lang="en">Result: passed the course with a high grade.</li>
+          <li lang="es">Resultado: curso superado notablemente.</li>
+          <li lang="en">My role: programming the ECS engine, and the game's physics and gameplay mechanics.</li>
+          <li lang="es">Mi rol: programación del motor de juego ECS, y de físicas y mecánicas de juego.</li>
+          <li lang="en">Also learned to use profiling to improve the game's performance.</li>
+          <li lang="es">Además, aprendizaje del uso de profiling para mejorar el rendimiento del juego.</li>
+          <li lang="en">Result: a year of facing new challenges and new ways of working that, with effort, I overcame — growing not just professionally but personally.</li>
+          <li lang="es">Resultado: un año en el que me enfrenté a nuevos retos y nuevas dinámicas de trabajo que, con esfuerzo, conseguí superar, fortaleciéndome no solo profesionalmente sino también personalmente.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section class="section section--mist">
     <div class="container split">
       <h2><span lang="en">Team</span><span lang="es">Equipo</span></h2>
-      <div><ul class="team"><li><strong>Amanda Cascales</strong><span><span lang="en">ECS and engine programming</span><span lang="es">Programación del ECS y del motor</span></span></li><li><strong><span class="todo">TODO name</span></strong><span><span lang="en"><span class="todo">TODO role</span></span><span lang="es"><span class="todo">TODO rol</span></span></span></li></ul></div>
+      <div><ul class="team team--4">
+        <li><div class="avatar" style="background-image:url('../assets/img/team-amanda.jpg')"></div><div class="team-info"><strong>Amanda Cascales Valentín</strong><span><span lang="en">Gameplay & Physics/Systems Programmer</span><span lang="es">Programadora de Gameplay y Sistemas/Físicas</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-ana.jpg')"></div><div class="team-info"><strong>Ana Martínez Hernández</strong><span><span lang="en">Technical Writer & Audio Programmer</span><span lang="es">Redactora técnico y Programadora de audio</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-daniel.jpg')"></div><div class="team-info"><strong>Daniel Coves Méndez</strong><span><span lang="en">3D artist & Graphics Programmer</span><span lang="es">Artista 3D y Programador de gráficos</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-diego.jpg')"></div><div class="team-info"><strong>Diego Maciá Esclapez</strong><span><span lang="en">AI & Physics Programmer</span><span lang="es">Programador de IA y Físicas</span></span></div></li>
+      </ul></div>
     </div>
   </section>
 
@@ -98,7 +121,7 @@
       <p><span lang="en">Game developer</span><span lang="es">Desarrolladora de videojuegos</span></p>
       <p>&copy; <span data-year>2026</span></p>
     </div>
-    <ul class="social"><li><a href="#" target="_blank" rel="noopener">GitHub</a></li><li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="#" target="_blank" rel="noopener">itch.io</a></li><li><a href="mailto:TODO@email.com">Email</a></li></ul>
+    <ul class="social"><li><a href="https://www.linkedin.com/in/amanda-cascales/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://mandicv.itch.io" target="_blank" rel="noopener">itch.io</a></li><li><a href="mailto:amandacascales@gmail.com">Email</a></li></ul>
   </div>
 </footer>
 </body>

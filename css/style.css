@@ -118,6 +118,7 @@ html[lang="en"] [lang="es"],html[lang="es"] [lang="en"]{display:none!important}
 .facts dt{font-weight:700}
 .facts dd{margin:0;color:var(--muted)}
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:0;padding:0;list-style:none}
+.team--4{grid-template-columns:repeat(4,1fr)}
 .team li{display:flex;align-items:center;gap:.9rem;padding:1rem 1.1rem;border-left:4px solid var(--accent);background:var(--mist)}
 .avatar{flex:0 0 56px;width:56px;height:56px;border-radius:50%;background:var(--tint) center/cover no-repeat}
 .team-info{min-width:0}
@@ -136,10 +137,12 @@ html[lang="en"] [lang="es"],html[lang="es"] [lang="en"]{display:none!important}
   .nav-open .nav{display:flex}
   .split{grid-template-columns:1fr}
   .team{grid-template-columns:repeat(2,1fr)}
+  .team--4{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:560px){
   .facts{grid-template-columns:1fr;gap:.1rem}´
   .team{grid-template-columns:1fr}
+  .team--4{grid-template-columns:1fr}
   .facts dd{margin-bottom:.9rem}
   .hero{padding-top:7rem}
 }
