@@ -15,6 +15,14 @@
 html[data-palette="wine"]{--accent:#A33B54;--accent-strong:#862F44;--tint:#F7ECEF}
 html[data-palette="indigo"]{--accent:#4F55D6;--accent-strong:#3D42B5;--tint:#EEF0FD}
 
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#17151C;--mist:#241F29;--line:#3A3444;
+    --text:#EDEAF0;--muted:#B5AFC0;
+    --tint:#2E1B20;--accent-strong:#E8737D;
+  }
+}
+
 /* ---------- Base ---------- */
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
