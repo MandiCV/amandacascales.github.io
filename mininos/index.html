@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="coral">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="Mi Ninos | Amanda Cascales" data-es="Mi Ninos | Amanda Cascales">Mi Ninos | Amanda Cascales</title>
+<meta name="description" content="Mi Ninos, a Game Boy platformer written in GBZ80 assembly for the GBRetroDev'24 game jam.">
+<meta property="og:title" content="Mi Ninos | Amanda Cascales">
+<meta property="og:description" content="Mi Ninos, a Game Boy platformer written in GBZ80 assembly for the GBRetroDev'24 game jam.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main"><span lang="en">Skip to content</span><span lang="es">Saltar al contenido</span></a>
+<header class="site-header">
+  <div class="container header-inner">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span><span lang="en" class="sr">Menu</span><span lang="es" class="sr">Menú</span></button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a href="../"><span lang="en">Home</span><span lang="es">Inicio</span></a>
+      <a href="../#about"><span lang="en">About</span><span lang="es">Sobre mí</span></a>
+      <a href="../#projects"><span lang="en">Projects</span><span lang="es">Proyectos</span></a>
+      <a href="../#contact"><span lang="en">Contact</span><span lang="es">Contacto</span></a>
+    </nav>
+    <a class="brand" href="../">Amanda Cascales</a>
+    <div class="header-tools">
+      <ul class="social"><li><a href="https://www.linkedin.com/in/amanda-cascales/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://mandicv.itch.io" target="_blank" rel="noopener">itch.io</a></li><li><a href="mailto:amandacascales@gmail.com">Email</a></li></ul>
+      <button class="lang-toggle" type="button">ES</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <div class="hero-wrap">
+    <section class="hero hero--page">
+      <div class="hero-bg" style="background-image:url('../assets/img/mininos-hero.jpg')"></div>
+      <div class="container hero-content">
+        <h1>Mi Ninos</h1>
+        <p lang="en" class="lead">A Game Boy platformer written in GBZ80 assembly, made for the GBRetroDev'24 game jam.</p><p lang="es" class="lead">Un plataformas para Game Boy escrito en ensamblador GBZ80, hecho para la game jam GBRetroDev'24.</p>
+        <div class="hero-actions"><a class="btn" href="https://nixteam.itch.io/mininos" target="_blank" rel="noopener"><span lang="en">Play on itch.io</span><span lang="es">Jugar en itch.io</span></a></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="container split">
+      <h2><span lang="en">Overview</span><span lang="es">Resumen</span></h2>
+      <div>
+        <p lang="en">Mi Ninos is a vertical platformer for the original Game Boy in which you help Nina find her mischievous kittens, exploring different parts of a city, from a park to the highest rooftops. It was built entirely in GBZ80 assembly by a team of three students from the University of Alicante for the GBRetroDev'24: Heroes of ASM game jam, our first project in assembly.</p>
+        <p lang="es">Mi Ninos es un plataformas vertical para la Game Boy original en el que ayudas a Nina a encontrar a sus gatitos traviesos, explorando distintas zonas de una ciudad, desde un parque hasta los tejados más altos. Se construyó por completo en ensamblador GBZ80, por un equipo de tres estudiantes de la Universidad de Alicante, para la game jam GBRetroDev'24: Heroes of ASM, nuestro primer proyecto en ensamblador.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="container">
+      <div class="split"><h2><span lang="en">Screenshots and video</span><span lang="es">Capturas y vídeo</span></h2><div></div></div>
+      <div class="gallery">
+        <div class="video"><iframe src="https://www.youtube.com/embed/QiuPLRmdkYM?si=bMI6Lur5CPK8bWE9" title="Mi Ninos trailer" loading="lazy" allowfullscreen></iframe></div>
+        <button class="media media--zoom" type="button" data-full="../assets/img/mininos-2.jpg" aria-label="Mi Ninos screenshot 2"><div style="background-image:url('../assets/img/mininos-2.jpg')"></div></button>
+        <button class="media media--zoom" type="button" data-full="../assets/img/mininos-3.jpg" aria-label="Mi Ninos screenshot 3"><div style="background-image:url('../assets/img/mininos-3.jpg')"></div></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <h2><span lang="en">How to play</span><span lang="es">Cómo jugar</span></h2>
+      <div><p lang="en">Free to download on itch.io as a ROM. Play on PC with an emulator (Emulicious or BGB recommended), or on real hardware with a flash cartridge.</p><p lang="es">Descarga gratuita en itch.io como ROM. Se puede jugar en PC con un emulador (se recomienda Emulicious o BGB), o en una Game Boy real con un cartucho flash.</p></div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="container split">
+      <h2><span lang="en">Technical information</span><span lang="es">Información técnica</span></h2>
+      <div><dl class="facts">
+        <dt><span lang="en">Engine</span><span lang="es">Motor</span></dt><dd><span lang="en">GBZ80 assembly, using the GBTelera framework</span><span lang="es">Ensamblador GBZ80, usando el framework GBTelera</span></dd>
+        <dt><span lang="en">Platform</span><span lang="es">Plataforma</span></dt><dd><span lang="en">Game Boy Classic</span><span lang="es">Game Boy Classic</span></dd>
+        <dt><span lang="en">Context</span><span lang="es">Contexto</span></dt><dd><span lang="en">Made in a game jam: GBRetroDev'24, Heroes of ASM</span><span lang="es">Hecho en una game jam: GBRetroDev'24, Heroes of ASM</span></dd>
+        <dt><span lang="en">Team</span><span lang="es">Equipo</span></dt><dd><span lang="en">3 people</span><span lang="es">3 personas</span></dd>
+        <dt><span lang="en">Status</span><span lang="es">Estado</span></dt><dd><span lang="en">Finished</span><span lang="es">Finalizado</span></dd>
+        <dt><span lang="en">My role</span><span lang="es">Mi rol</span></dt><dd><span lang="en">Programmer</span><span lang="es">Programadora</span></dd>
+      </dl></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <h2><span lang="en">Development</span><span lang="es">Desarrollo</span></h2>
+        <div>
+        <ul>
+            <li lang="en">Had to juggle two university projects running in parallel.</li>
+            <li lang="es">Tuvimos que aprender a llevar dos proyectos a la vez.</li>
+            <li lang="en">Learned the fundamentals of low-level programming, without the conveniences of a modern engine, but also without its layers of abstraction.</li>
+            <li lang="es">Aprendimos las bases de la programación a bajo nivel, sin las facilidades de un motor moderno, pero también sin la abstracción que este supone.</li>
+            <li lang="en">Worked within the Game Boy's hardware limitations.</li>
+            <li lang="es">Trabajamos con las limitaciones a nivel de hardware que supone la Game Boy.</li>
+            <li lang="en">Won third place for art in the jam.</li>
+            <li lang="es">Ganamos el tercer premio al arte.</li>
+            <li lang="en">Especially useful for understanding how everything works under the hood, optimising to the limit, and building a solid foundation to keep growing on.</li>
+            <li lang="es">Me sirvió especialmente para aprender cómo funciona todo por debajo, optimizar al máximo, y afianzar unas bases sólidas sobre las que seguir construyendo.</li>
+            <li lang="en">A special motivation throughout the project: being able to program for, and actually play the game on, the Game Boy itself, the console from my childhood that has meant so much to me.</li>
+            <li lang="es">Un incentivo especial durante todo el proyecto: poder programar y probarlo en la propia consola de mi infancia, la Game Boy, que tanto me ha marcado en mi vida.</li>
+        </ul>
+        </div>
+    </div>
+  </section>
+
+  <section class="section section--mist">
+    <div class="container split">
+      <h2><span lang="en">Team</span><span lang="es">Equipo</span></h2>
+      <div><ul class="team">
+        <li><div class="avatar" style="background-image:url('../assets/img/team-amanda.jpg')"></div><div class="team-info"><strong>Amanda Cascales Valentín</strong><span><span lang="en">Programmer</span><span lang="es">Programadora</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-sara.jpg')"></div><div class="team-info"><strong>Sara Ródenas González</strong><span><span lang="en">Programmer and Artist</span><span lang="es">Programadora y Artista</span></span></div></li>
+        <li><div class="avatar" style="background-image:url('../assets/img/team-joel.jpg')"></div><div class="team-info"><strong>Joel Andrés García Reyes</strong><span><span lang="en">Programmer & music</span><span lang="es">Programador y músico</span></span></div></li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container"><a class="back" href="../#projects"><span lang="en">Back to all projects</span><span lang="es">Ver todos los proyectos</span></a></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p><strong>Amanda Cascales</strong></p>
+      <p><span lang="en">Game developer</span><span lang="es">Desarrolladora de videojuegos</span></p>
+      <p>&copy; <span data-year>2026</span></p>
+    </div>
+    <ul class="social"><li><a href="https://www.linkedin.com/in/amanda-cascales/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://mandicv.itch.io" target="_blank" rel="noopener">itch.io</a></li><li><a href="mailto:amandacascales@gmail.com">Email</a></li></ul>
+  </div>
+</footer>
+</body>
+</html>

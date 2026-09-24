@@ -76,7 +76,7 @@ html[lang="en"] [lang="es"],html[lang="es"] [lang="en"]{display:none!important}
 .section-title{margin:0 0 2.5rem;font-size:clamp(2rem,5vw,3rem);font-weight:800;text-align:center}
 
 /* Projects grid */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.5rem;margin:0;padding:0;list-style:none}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin:0;padding:0;list-style:none}
 .card{display:flex;flex-direction:column;background:var(--mist);border-radius:var(--r);overflow:hidden}
 .media{aspect-ratio:16/9;background:var(--ink)}
 .media>div{width:100%;height:100%;background-size:cover;background-position:center}
@@ -138,11 +138,13 @@ html[lang="en"] [lang="es"],html[lang="es"] [lang="en"]{display:none!important}
   .split{grid-template-columns:1fr}
   .team{grid-template-columns:repeat(2,1fr)}
   .team--4{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:560px){
   .facts{grid-template-columns:1fr;gap:.1rem}´
   .team{grid-template-columns:1fr}
   .team--4{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
   .facts dd{margin-bottom:.9rem}
   .hero{padding-top:7rem}
 }
