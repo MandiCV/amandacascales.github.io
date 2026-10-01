@@ -14,7 +14,6 @@
 }
 html[data-palette="wine"]{--accent:#A33B54;--accent-strong:#862F44;--tint:#F7ECEF}
 html[data-palette="indigo"]{--accent:#4F55D6;--accent-strong:#3D42B5;--tint:#EEF0FD}
-
 @media (prefers-color-scheme: dark){
   :root{
     --paper:#17151C;--mist:#241F29;--line:#3A3444;
@@ -22,7 +21,6 @@ html[data-palette="indigo"]{--accent:#4F55D6;--accent-strong:#3D42B5;--tint:#EEF
     --tint:#2E1B20;--accent-strong:#E8737D;
   }
 }
-
 /* ---------- Base ---------- */
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -101,6 +99,7 @@ html[lang="en"] [lang="es"],html[lang="es"] [lang="en"]{display:none!important}
 /* Contact */
 .contact{max-width:36rem;margin-inline:auto;text-align:center}
 .contact .email{display:inline-block;margin:.25rem 0 1.75rem;font-size:clamp(1.3rem,4vw,1.9rem);font-weight:700;color:var(--accent-strong);overflow-wrap:anywhere}
+.contact .phone{display:block;margin-top:-1rem}
 .contact hr{margin:0 0 1.75rem;border:0;border-top:1px solid var(--line)}
 .contact .social{justify-content:center}
 
@@ -149,7 +148,7 @@ html[lang="en"] [lang="es"],html[lang="es"] [lang="en"]{display:none!important}
   .cards{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:560px){
-  .facts{grid-template-columns:1fr;gap:.1rem}´
+  .facts{grid-template-columns:1fr;gap:.1rem}
   .team{grid-template-columns:1fr}
   .team--4{grid-template-columns:1fr}
   .cards{grid-template-columns:1fr}
